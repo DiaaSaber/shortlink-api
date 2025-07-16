@@ -13,4 +13,6 @@ Rails.application.routes.draw do
       get 'decode/:short_code', to: 'urls#decode'
     end
   end
+
+  get '/:short_code', to: 'api/v1/urls#decode'
 end
