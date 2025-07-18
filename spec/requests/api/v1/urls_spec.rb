@@ -30,6 +30,16 @@ RSpec.describe 'Api::V1::Urls', type: :request do
         expect(json_response).to have_key('error')
         expect(json_response['error']).to eq('param is missing or the value is empty: url')
       end
+
+      it 'returns an unprocessable entity error if the url is invalid' do
+        post '/api/v1/encode', params: { url: 'not a valid url' }, as: :json
+
+        expect(response).to have_http_status(:unprocessable_entity)
+
+        json_response = JSON.parse(response.body)
+        expect(json_response).to have_key('errors')
+        expect(json_response['errors']).to include('Long url is not a valid URL')
+      end
     end
   end
 
