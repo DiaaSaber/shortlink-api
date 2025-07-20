@@ -6,19 +6,13 @@ A simple and robust URL shortening service built with Ruby on Rails and deployed
 
 ## Table of Contents
 
--   [Features](https://www.google.com/search?q=%23features "null")
-    
--   [Tech Stack](https://www.google.com/search?q=%23tech-stack "null")
-    
--   [API Endpoints](https://www.google.com/search?q=%23api-endpoints "null")
-    
--   [Getting Started (Docker)](https://www.google.com/search?q=%23getting-started-docker "null")
-    
--   [Running the Tests](https://www.google.com/search?q=%23running-the-tests "null")
-    
--   [Security Considerations](https://www.google.com/search?q=%23security-considerations "null")
-    
--   [Scalability Plan](https://www.google.com/search?q=%23scalability-plan "null")
+-   [Features](#features)
+-   [Tech Stack](#tech-stack)
+-   [API Endpoints](#api-endpoints)
+-   [Getting Started (Docker)](#getting-started-docker)
+-   [Running the Tests](#running-the-tests)
+-   [Security Considerations](#security-considerations)
+-   [Scalability Plan](#scalability-plan)
     
 
 ## Features
