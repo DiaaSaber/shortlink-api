@@ -1,0 +1,16 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+
+build:
+  docker:
+    web: Dockerfile
+
+release:
+  image: web
+  command:
+    - bundle exec rails db:migrate
+
+run:
+  web: bundle exec rails server -p $PORT -b 0.0.0.0
