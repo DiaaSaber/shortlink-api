@@ -40,6 +40,7 @@ gem 'base62-rb'
 # gem "rack-cors"
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'rspec-rails', '~> 6.0'
   gem 'simplecov', require: false
 end
